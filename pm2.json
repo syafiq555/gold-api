@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "gold-api",
+      "script": "./src/main.js",
+      "exec_mode": "fork",
+      "instances": 1,
+      "node_args": "-r esm",
+      "env": {
+        "NODE_ENV": "development",
+        "NODE_PORT": "3000"
+      },
+      "max-memory-restart": "300M"
+    }
+  ]
+}
